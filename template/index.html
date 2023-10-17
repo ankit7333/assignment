@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    
+    <script defer type="module" src="../js/createcookie.js"></script>
+    <script defer type="module" src="../js/modal.js"></script>
+    <script defer type="module" src="../js/validation.js"></script>
+  </head>
+  <body>
+    <dialog id="christmas__sale" class="modal">
+        <div class="modal__header">
+            <button class="button modal__close"></button>
+        </div>
+        <div class="modal__body">
+            <form class="modal__body--left">
+                <b>get $10 off when you sign up for</b>
+                <p>saving, news, updated and more</p>
+                <div class="inputwrap">
+                    <input type="text" id="username" value="" name="uname" placeholder="your name" />
+                </div>
+                <div class="inputwrap">
+                    <input type="text" id="email" value="" name="email" placeholder="email address" />
+                </div>
+                <label class="checkbox">
+                    <input id="newsletter" type="checkbox" name="nletter" />
+                    <span>Check this box to receive monthly newsletter.</span>
+                </label>
+                <button id="submit" type="submit" class="button primary__button ripple">SIGN UP</button>
+                <p class="modal__footer">
+                    <a class="ripple transparent__button policy" href="#">PRIVACY POLICY</a>
+                </p>
+            </form>
+            <div class="modal__body--right">
+                <img src="../images/right__image.jpg" alt="Big Christmas Sale" />
+            </div>
+        </div>
+    </dialog>
+  </body>
+</html>
